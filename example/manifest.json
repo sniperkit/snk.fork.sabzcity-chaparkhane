@@ -1,0 +1,15 @@
+{
+    "Name": "exampleTest",
+    "Version": "0.0.1",
+    "Description": "",
+    "TermsOfService": "https://sabz.city/terms/",
+    "Contact": {
+        "Name": "SabzCity Admins",
+        "URL": "https://deveopers.sabz.city",
+        "Email": "admins@sabz.city"
+    },
+    "License": {
+        "Name": "SabzCity co.",
+        "URL": "https://sabz.city/licence/"
+    }
+}
