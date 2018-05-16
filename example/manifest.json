@@ -1,6 +1,6 @@
 {
     "Name": "exampleTest",
-    "Version": "0.0.1",
+    "Version": "0.0.0001",
     "Description": "",
     "TermsOfService": "https://sabz.city/terms/",
     "Contact": {
@@ -11,5 +11,6 @@
     "License": {
         "Name": "SabzCity co.",
         "URL": "https://sabz.city/licence/"
-    }
+    },
+    "Validators": ["github.com/SabzCity/go-library/validation"]
 }
