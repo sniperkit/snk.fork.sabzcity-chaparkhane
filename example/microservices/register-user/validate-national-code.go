@@ -1,6 +1,6 @@
 // Copyright 2018 SabzCity. All rights reserved.
 
-package logic
+package registeruser
 
 // ReqNationalCodeValidation : The request structure of "NationalCodeValidation()".
 type ReqNationalCodeValidation struct {
@@ -8,6 +8,9 @@ type ReqNationalCodeValidation struct {
 }
 
 // ResNationalCodeValidation : The response structure of "NationalCodeValidation()".
+// restful-Headers-Access-Control-Allow-Origin : "https://sabz.city"
+// jsonrpc-Headers-Access-Control-Allow-Origin : "*"
+// restful-Headers-Cache : ""
 type ResNationalCodeValidation struct {
 	Valid bool `restful:"body" jsonrpc:"body" grpc:"body" protobuf:"1" json:"Valid" xml:"Valid"` // UUID of user
 }
@@ -15,10 +18,8 @@ type ResNationalCodeValidation struct {
 // NationalCodeValidation : Check National code and say it is true or false.
 // restful-URI : "/{ServiceName}/{ServiceVersion}/{MethodName}/"
 // restful-Method : "POST"
-// restful-Headers-Access-Control-Allow-Origin : "https://sabz.city"
 // jsonrpc-URI : "/"
 // jsonrpc-Method : "POST"
-// jsonrpc-Headers-Access-Control-Allow-Origin : "*"
 // ...
 func NationalCodeValidation(logicRequest *ReqNationalCodeValidation) (*ResNationalCodeValidation, error) {
 	var logicResponse ResNationalCodeValidation

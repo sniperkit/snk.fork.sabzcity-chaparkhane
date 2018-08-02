@@ -13,22 +13,3 @@
 // limitations under the License.
 
 package chaparkhane
-
-type manifest struct {
-	Name           string
-	Description    string
-	TermsOfService string
-	Contact        struct {
-		Name  string
-		URL   string
-		Email string
-	}
-	License struct {
-		Name string
-		URL  string
-	}
-	Validators         []string
-	ServiceRegisterURI string
-}
-
-func starterkit() {}
