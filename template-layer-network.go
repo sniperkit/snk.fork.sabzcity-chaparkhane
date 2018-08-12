@@ -14,28 +14,6 @@
 
 package chaparkhane
 
-// Manifest : Object to store services information.
-type Manifest struct {
-	Name           string
-	Description    string
-	TermsOfService string
-	Contact        ManifestContact
-	Licence        ManifestLicence
-}
-
-// ManifestContact :
-type ManifestContact struct {
-	Name  string
-	URL   string
-	Email string
-}
-
-// ManifestLicence :
-type ManifestLicence struct {
-	Name string
-	URL  string
-}
-
-func starterkit() {
-	// We read manifest json data
-}
+// JUST DO IN PERSIAOS!!!!!!!!
+// In PersiaOS we don't care about e.g. tcp overhead to manage packets!! Application must do it!!
+// In this layer that we must detect network(OSI)||Internet protocol e.g. IP, ...

@@ -22,11 +22,15 @@ We use git tag to determine last version of every microservice. Each microservic
 If any active filters return any kind of error in return of functions, The request will be responsed with that error.
 They also can remove or add data to request structure. e.g. add or remove http header.
 
-### WHAT IS DOING IN HANDLER LAYERS
+### Done in Autogenerate Layers
 - Serialize and deserialize data format like json, xml, ... would be faster up to 5x because of not use of reflection   
   e.g. https://github.com/mailru/easyjson , https://github.com/pquerna/ffjson
 - Check & validate request data
 - Make handlers to recieve data and call logic methods.
+
+### Build Rules
+- If commit set as the version tag, All logic methods must be bug free, Otherwise Building will be failed with error!
+- If commit not set as the version tag, Each methods has error will be eliminate from building process with error!
 
 ### Service Register
 In service register cycle, call ServiceRegisterURI and set random and free ports for handelr layers.

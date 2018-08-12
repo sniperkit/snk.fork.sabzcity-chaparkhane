@@ -1,6 +1,6 @@
 {
-    "Name": "exampleTest",
-    "Description": "",
+    "Name": "register-user",
+    "Description": "Register User Microservice",
     "TermsOfService": "https://sabz.city/terms/",
     "Contact": {
         "Name": "SabzCity Admins",
@@ -10,6 +10,5 @@
     "License": {
         "Name": "SabzCity co.",
         "URL": "https://sabz.city/licence/"
-    },
-    "Validators": ["github.com/SabzCity/go-library/validation"]
+    }
 }

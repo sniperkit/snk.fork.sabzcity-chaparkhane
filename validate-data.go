@@ -14,28 +14,11 @@
 
 package chaparkhane
 
-// Manifest : Object to store services information.
-type Manifest struct {
-	Name           string
-	Description    string
-	TermsOfService string
-	Contact        ManifestContact
-	Licence        ManifestLicence
-}
+const tagName = "valid"
 
-// ManifestContact :
-type ManifestContact struct {
-	Name  string
-	URL   string
-	Email string
-}
+// Validator : This can manage special field of object.
+type Validator func(interface{}) bool
 
-// ManifestLicence :
-type ManifestLicence struct {
-	Name string
-	URL  string
-}
+// Validate each data with tagName with related function from validators folder.
 
-func starterkit() {
-	// We read manifest json data
-}
+// valid data can be required, optional, ...

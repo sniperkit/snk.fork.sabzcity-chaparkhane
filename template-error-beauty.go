@@ -14,28 +14,5 @@
 
 package chaparkhane
 
-// Manifest : Object to store services information.
-type Manifest struct {
-	Name           string
-	Description    string
-	TermsOfService string
-	Contact        ManifestContact
-	Licence        ManifestLicence
-}
-
-// ManifestContact :
-type ManifestContact struct {
-	Name  string
-	URL   string
-	Email string
-}
-
-// ManifestLicence :
-type ManifestLicence struct {
-	Name string
-	URL  string
-}
-
-func starterkit() {
-	// We read manifest json data
-}
+// Send beauty HTML response in http error situation like 500, 404,
+// It will send just if there is not a filter to handle this.
