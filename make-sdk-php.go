@@ -13,7 +13,3 @@
 // limitations under the License.
 
 package chaparkhane
-
-// It is the layer that we must detect application protocol e.g. HTTP, HTTPS, DNS, FTP, ...
-
-// If project don't have any logic that support data on e.g. HTTP (restful, ...) we reject request with related erorr.

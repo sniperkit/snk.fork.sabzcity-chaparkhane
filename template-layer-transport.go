@@ -16,3 +16,5 @@ package chaparkhane
 
 // It is the layer that we must detect transport protocol e.g. TCP, UDP, SPX, ...
 // We must call next layer by detected rules.
+
+// If project don't have any logic that support data on e.g. UDP (DNS, ...) we reject request with related erorr.
