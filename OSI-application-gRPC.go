@@ -13,9 +13,3 @@
 // limitations under the License.
 
 package chaparkhane
-
-// Ready data for logics & do some logic
-// - Route by URL
-// - Encode||Decode body by mime type header
-
-// Add Server Header to response : "ChaparKhane" || SCP means "SabzCityPlatform".

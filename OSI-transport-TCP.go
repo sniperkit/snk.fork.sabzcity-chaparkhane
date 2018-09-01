@@ -18,3 +18,18 @@ package chaparkhane
 // We must call next layer by detected rules.
 
 // If project don't have any logic that support data on e.g. UDP (DNS, ...) we reject request with related erorr.
+
+// TCPTransportProtocol : https://en.wikipedia.org/wiki/Transmission_Control_Protocol#TCP_segment_structure
+type TCPTransportProtocol struct {
+	SourcePort           uint16
+	DestinationPort      uint16
+	SequenceNumber       uint32
+	AcknowledgmentNumber uint32
+	DataOffset           uint8
+	Reserved             uint8
+	Flags                uint16 // I think it must be multi bool value not integer!
+	WindowSize           uint16
+	Checksum             uint16
+	UrgentPointer        uint16
+	// Options
+}

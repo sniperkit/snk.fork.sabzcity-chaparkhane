@@ -14,6 +14,15 @@
 
 package chaparkhane
 
-// JUST DO IN PERSIAOS!!!!!!!!
-// In PersiaOS we don't care about e.g. tcp overhead to manage packets!! Application must do it!!
-// In this layer that we must detect network(OSI)||Internet protocol e.g. IP, ...
+// It is the layer that we must detect transport protocol e.g. TCP, UDP, SPX, ...
+// We must call next layer by detected rules.
+
+// If project don't have any logic that support data on e.g. UDP (DNS, ...) we reject request with related erorr.
+
+// UDPTransportProtocol : https://en.wikipedia.org/wiki/User_Datagram_Protocol
+type UDPTransportProtocol struct {
+	SourcePort      uint16
+	DestinationPort uint16
+	Length          uint16
+	Checksum        uint16
+}

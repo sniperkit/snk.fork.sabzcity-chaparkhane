@@ -14,4 +14,5 @@
 
 package chaparkhane
 
-// Ready data for logics
+// Protocol Standard
+// https://www.jsonrpc.org/specification
